@@ -1,0 +1,169 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  .MainNav {
+    width: 100vw;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px -7px rgba(0, 0, 0, 0.75);
+  }
+  .leftLogos {
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .MetroBankLogoimg {
+    width: 151px;
+    height: 30px;
+  }
+  .abcLogoimg {
+    width: 89px;
+    height: 19px;
+  }
+  .rightLogo {
+    display: flex;
+    padding-top: 12px;
+    padding-left: 12px;
+    margin-right: 10px;
+  }
+
+  .belliconimg {
+    padding: 10px;
+  }
+  /* .signinimg {
+    width: 17px;
+    height: 17px;
+    padding: 10px;
+    background-color: #d90429;
+    border-radius: 50%;
+  } */
+  .body {
+    background-color: #ffff;
+  }
+}
+
+.MainNav {
+  width: 100%;
+}
+
+.logos {
+  width: 151px;
+  height: 30px;
+}
+.abcLogo {
+  width: 89px;
+  height: 19px;
+}
+
+.rlogo {
+  margin-left: 21px;
+  margin-top: 21px;
+}
+
+.MetroBankLogoimg img {
+  padding-right: 10px;
+  border-right: 2px solid gray;
+}
+
+.leftLogos {
+  display: flex;
+}
+.rightLogo {
+  display: flex;
+  margin-top: 9px;
+  padding-bottom: 5px;
+  margin-right: 7px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 10px -7px rgba(0, 0, 0, 0.75);
+}
+
+.belliconimg {
+  padding: 10px;
+}
+/* .signinimg {
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+  background-color: #d90429;
+  border-radius: 50%;
+} */
+.signInbtn {
+  background: transparent;
+  outline: none;
+  border: 0;
+}
+
+.nameLogo {
+}
+
+.abcLogo {
+}
+
+.signInbtn {
+  color: #ffff;
+  font-size: 14px;
+  font-weight: 400;
+  background: #d90429;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  padding: 8px;
+  top: 20;
+  margin-top: 3px;
+}
+
+.modal_container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+.modal_container h2 {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  color: #d90429;
+}
+
+.modal_container > .btn_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal_container > .btn_flex > .inlinebtn {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #ffff;
+  padding-right: 40px;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+.custom_dialog {
+  width: 20% !important;
+  /* height: 20px !important; */
+  top: 50%;
+  left: 20% !important;
+}
+
+.signInbtn {
+  color: #ffff;
+  font-size: 14px;
+  font-weight: 400;
+}
