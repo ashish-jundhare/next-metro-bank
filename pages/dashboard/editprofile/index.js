@@ -1,13 +1,16 @@
 import MainNav from "../../../Components/MainNav";
 import styles from "../../../styles/editprofile.module.css";
 import { AiFillEyeInvisible } from "react-icons/ai";
-
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
 export default function editprofile() {
   //   const state = {
   //     img: previewImg,
   //   };
-
-  return (
+  const success = useSelector((state) => state.auth.isSuccess);
+  const navigate = useRouter();
+  return success ? (
     <div className={styles.editProfie}>
       <div className={styles.heading}>
         <h2> Edit Profile</h2>
@@ -104,5 +107,9 @@ export default function editprofile() {
         </form>
       </div>
     </div>
+  ) : (
+    useEffect(() => {
+      navigate.replace("/login");
+    }, [])
   );
 }

@@ -8,14 +8,16 @@ import TabNav from "../../Components/TabNav";
 import { useSelector } from "react-redux";
 import DetailsTab from "../../Components/DetailsTab";
 import { authActions } from "../../featurs/slicer/authSlice";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 // Yash's Feedback
 // leave one line after imports
 // remove unused code and variables
 export default function dashboard() {
   const success = useSelector((state) => state.auth.isSuccess);
   const toggle = useSelector((state) => state.dashboardToggle.detailsTabActive);
-
-  return (
+  const navigate = useRouter();
+  return success ? (
     <div className={styles.body}>
       <div className={styles.MainNav}>
         <MainNav />
@@ -59,5 +61,9 @@ export default function dashboard() {
         </div>
       )}
     </div>
+  ) : (
+    useEffect(() => {
+      navigate.replace("/login");
+    }, [])
   );
 }
