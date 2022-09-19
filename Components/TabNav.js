@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
 
 export default function TabNav() {
-  // Yash's Feedback
-  // remove unused code
   const navigate = useRouter();
   const tabactive = useSelector((state) => state.summaryTabActive);
   const dispatch = useDispatch();

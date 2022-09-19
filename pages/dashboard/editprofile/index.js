@@ -1,16 +1,13 @@
-import MainNav from "../../../Components/MainNav";
 import styles from "../../../styles/editprofile.module.css";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 export default function editprofile() {
-  //   const state = {
-  //     img: previewImg,
-  //   };
   const success = useSelector((state) => state.auth.isSuccess);
   const navigate = useRouter();
-  return success ? (
+  const Authenticated = process.env.NEXT_PUBLIC_SESSION;
+  return Authenticated ? (
     <div className={styles.editProfie}>
       <div className={styles.heading}>
         <h2> Edit Profile</h2>

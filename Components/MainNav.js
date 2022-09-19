@@ -1,7 +1,4 @@
-// import MetroBankLogo from "../MetroBankLogo.svg";
-// import abcLogo from "../public/abcLogo.svg";
 import styles from "../styles/MainNav.module.css";
-// import bellicon from "../public/bellicon.svg";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import DashboarMenuModal from "./modals/DashboarMenuModal";
@@ -9,8 +6,6 @@ import { useRouter } from "next/router";
 
 export default function MainNav() {
   const email = useSelector((state) => state.auth.isEmail);
-  // Yash's Feedback
-  // remove unused vars, imports, code
   const userName = useSelector((state) => state.auth.user);
 
   const navigate = useRouter();
@@ -25,7 +20,6 @@ export default function MainNav() {
           <div className={styles.leftLogos}>
             <div className={styles.MetroBankLogoimg}>
               <img
-                // onClick={navigate.replace("/dashboard")}
                 src="../MetroBankLogo.svg"
                 className={`${styles.nameLogo} ${styles.rlogo}`}
                 alt="MetroBankLogo"

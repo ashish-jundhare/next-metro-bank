@@ -23,8 +23,6 @@ export default function registration() {
   const [userRegistration, setUserRegistration] = useState(initialstate);
 
   let name, value;
-  // Yash's Feedback
-  // add one line before and after variables, functions
   const handleChangeFormData = (e) => {
     name = e.target.name;
     value = e.target.value;
@@ -42,9 +40,8 @@ export default function registration() {
         password: userRegistration.password,
       })
       .then((res) => {})
-      .catch((err) => {});
-
-    setUserRegistration(initialstate);
+      .catch((err) => {})
+      .finally(setUserRegistration(initialstate));
   };
 
   return (

@@ -4,28 +4,20 @@ import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../../featurs/slicer/authSlice";
 
-
-
 export default function DashboarMenuModal() {
     const success = useSelector((state) => state.auth.isSuccess);
     const navigate = useRouter();
     const dispatch = useDispatch();
 
     function handleEdit() {
-        // if (success) {
-        //     navigate.replace('/editprofile');
-        // } else {
-        //     navigate.replace('/login')
-        // }
-
         success ? (navigate.replace('/editprofile')) : (navigate.replace('/login'));
     }
 
     function handleLogout() {
+        sessionStorage.removeItem("Authenticated");
         dispatch(authActions.setIsSuccess(false));
         navigate.replace('/login')
     }
-
 
     return (
         <div className={styles.container}>
@@ -38,7 +30,6 @@ export default function DashboarMenuModal() {
             </div>
             <div className={styles.modal_btn_container}>
                 <button onClick={handleEdit} className={styles.modal_btn}>
-
                     <h3>Edit Profile</h3>
                 </button>
                 <button className={styles.modal_btn}>

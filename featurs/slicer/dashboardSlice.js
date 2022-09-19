@@ -11,11 +11,9 @@ export const dashboardSlice = createSlice({
   reducers: {
     setSummaryTab(state) {
       state.detailsTabActive = false;
-      // state.summaryTabActive = true;
     },
 
     setDetailsTab(state) {
-      // state.summaryTabActive = false;
       state.detailsTabActive = true;
     },
   },

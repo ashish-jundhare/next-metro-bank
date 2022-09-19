@@ -1,4 +1,3 @@
-// import "./style/ActiveServices.css";
 import styles from "../styles/ActiveServices.module.css";
 import wallet from "../public/wallet.svg";
 import Investment from "../public/Investment.svg";

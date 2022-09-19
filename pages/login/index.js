@@ -16,14 +16,10 @@ export default function login() {
   const navigate = useRouter();
   const [filled, setFilled] = useState("");
   const dispatch = useDispatch();
-  // const [data, setData] = useState(intial);
   const [userId, serUserId] = useState("");
   const [userPass, setuserPass] = useState("");
 
   const url = "http://localhost:3004/users";
-  // Yash's Feedback
-  // remove unused variables/ code
-  const auth = useSelector((state) => state.auth);
   const success = useSelector((state) => state.auth.isSuccess);
   const error = useSelector((state) => state.auth.isError);
   function handleUsername(e) {
@@ -42,18 +38,16 @@ export default function login() {
       .then((response) => {
         response.data.map((item) => {
           if (item.email === userId && item.password === userPass) {
-            console.log("Loged In");
-
             dispatch(authActions.setIsSuccess(true));
             dispatch(authActions.setIsUser(item.fullName));
             dispatch(authActions.setIsEmail(item.email));
+            sessionStorage.setItem("Authenticated", true);
             setTimeout(() => {
               navigate.replace("/dashboard");
             }, 2000);
 
             return;
           } else {
-            console.log("Invalid credentials");
             dispatch(authActions.setIsError(true));
             dispatch(authActions.setIsMessage("Oops Something went Wrong!!"));
           }
@@ -81,7 +75,6 @@ export default function login() {
             <input
               id={styles.input_field}
               type={"email"}
-              // autoComplete="off"
               value={userId}
               name="userId"
               onChange={handleUsername}
@@ -97,7 +90,6 @@ export default function login() {
                   type={"password"}
                   name="password"
                   value={userPass}
-                  // autoComplete="off"
                   onChange={handlePass}
                 />
               </div>

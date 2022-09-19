@@ -27,7 +27,7 @@
 
 .footer_detailsTab {
   margin-top: 205px;
-  vertical-align: middle;
+  margin-left: 50%;
   margin-bottom: 12px;
 }
 
@@ -40,7 +40,7 @@
 .table_contents {
   background: #f4f5fd;
   border-radius: 12px;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   border-collapse: collapse;
 }
 .table_contents .trcc .tdcc {
@@ -57,6 +57,10 @@
   font-family: "Open Sans", sans-serif;
   text-decoration: solid;
   padding-bottom: 4px;
+}
+.table_body {
+  border: 1px solid gray;
+  border-radius: 12px;
 }
 
 /* h2 {

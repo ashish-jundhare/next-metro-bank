@@ -1,10 +1,6 @@
 import styles from "../styles/SummaryTab.module.css";
-// add one line after imports
 
 export default function SummaryTab() {
-  // Yash's Feedback
-  // remove used code, vars
-
   return (
     <div className={styles.summary_main}>
       <div className={styles.summaryHeading}>

@@ -1,4 +1,3 @@
-// import "./style/CurrentServCard.css";
 import styles from "../styles/CurrentServCard.module.css";
 import CurrentAcc from "../public/CurrentAcc.svg";
 import Payroll from "../public/Payroll.svg";
@@ -6,10 +5,6 @@ import payments from "../public/payments.svg";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function CurrentServCard() {
-  const dispatch = useDispatch();
-  // Yash's Feedback
-  // remove unused code, vars, imports
-  const services = useSelector((state) => state.auth.isServices);
   const cardDetails = [
     {
       img: CurrentAcc,
