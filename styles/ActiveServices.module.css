@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+@media screen and(max-width:480px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Active_services_card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: block;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.Active_services_card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card {
+  display: block;
+  margin-left: 25px;
+  margin-right: 25px;
+}

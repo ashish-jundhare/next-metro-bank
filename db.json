@@ -1,0 +1,137 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "FullName": "ashish",
+      "date": "28/07/2022",
+      "email": "ashish@gmail.com",
+      "password": "0",
+      "services": [
+        {
+          "id": 1,
+          "img": "./src/components/images/ServicesImg/CurrentAcc.svg",
+          "title": "Current Account",
+          "rating": 1
+        },
+        {
+          "id": 2,
+          "img": "./src/components/images/ServicesImg/Payroll.svg",
+          "title": "Payroll",
+          "rating": 2
+        },
+        {
+          "id": 3,
+          "img": "./src/components/images/ServicesImg/TaxPayment.svg",
+          "title": "Tax Payment",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "FullName": "sandip",
+      "date": "30/07/2022",
+      "email": "sandip@gmail.com",
+      "password": "!*#$%",
+      "id": 2,
+      "services": [
+        {
+          "id": 1,
+          "img": "./src/components/images/ServicesImg/CurrentAcc.svg",
+          "title": "Current Account",
+          "rating": 1
+        },
+        {
+          "id": 2,
+          "img": "./src/components/images/ServicesImg/Payroll.svg",
+          "title": "Payroll",
+          "rating": 2
+        },
+        {
+          "id": 3,
+          "img": "./src/components/images/ServicesImg/TaxPayment.svg",
+          "title": "Tax Payment",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "FullName": "akash",
+      "date": "31/07/2022",
+      "email": "akash@gmail.com",
+      "password": "!*#*%",
+      "id": 3,
+      "services": [
+        {
+          "id": 1,
+          "img": "./src/components/images/ServicesImg/CurrentAcc.svg",
+          "title": "Current Account",
+          "rating": 1
+        },
+        {
+          "id": 2,
+          "img": "./src/components/images/ServicesImg/Payroll.svg",
+          "title": "Payroll",
+          "rating": 2
+        },
+        {
+          "id": 3,
+          "img": "./src/components/images/ServicesImg/TaxPayment.svg",
+          "title": "Tax Payment",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "fullName": "ashish jundhare",
+      "date": "2022-08-08",
+      "email": "abc@gmail.com",
+      "id": 4,
+      "services": [
+        {
+          "id": 1,
+          "img": "./src/components/images/ServicesImg/CurrentAcc.svg",
+          "title": "Current Account",
+          "rating": 1
+        },
+        {
+          "id": 2,
+          "img": "./src/components/images/ServicesImg/Payroll.svg",
+          "title": "Payroll",
+          "rating": 2
+        },
+        {
+          "id": 3,
+          "img": "./src/components/images/ServicesImg/TaxPayment.svg",
+          "title": "Tax Payment",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "fullName": "mansi more",
+      "date": "2022-08-04",
+      "email": "mansi@zyx.com",
+      "id": 5,
+      "services": [
+        {
+          "id": 1,
+          "img": "./src/components/images/ServicesImg/CurrentAcc.svg",
+          "title": "Current Account",
+          "rating": 1
+        },
+        {
+          "id": 2,
+          "img": "./src/components/images/ServicesImg/Payroll.svg",
+          "title": "Payroll",
+          "rating": 2
+        },
+        {
+          "id": 3,
+          "img": "./src/components/images/ServicesImg/TaxPayment.svg",
+          "title": "Tax Payment",
+          "rating": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+@media screen and (max-width: 480px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .SummaryTab_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+}
+.labelcc {
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: 400px;
+}
+.summaryHeading {
+  font-size: 18px;
+}
+.SummaryContains {
+  margin-top: 21px;
+}
+.values {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 9px;
+}
+
+.SummaryTab_container {
+  display: flex;
+  padding-right: 131px;
+}
+.contains {
+  margin-top: 24px;
+}
+.labelcc {
+  color: rgba(0, 0, 0, 0.38);
+  margin-top: 24px;
+  font-weight: 400px;
+}
+
+.values {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 9px;
+}
+
+.contains {
+  padding-right: 131px;
+}

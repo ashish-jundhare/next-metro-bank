@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.talblecc {
+  width: 100%;
+  color: #828282;
+}
+.Details_table {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  border-radius: 12px;
+  margin-top: 12px;
+  padding: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.trcc .tdcc {
+  padding: 20px;
+}
+
+.footer_detailsTab {
+  margin-top: 205px;
+  margin-left: 50%;
+  margin-bottom: 12px;
+}
+
+.footercc {
+  color: #1a1a1a;
+  font-weight: 400px;
+  font-size: 12px;
+}
+
+.table_contents {
+  background: #f4f5fd;
+  border-radius: 12px;
+  /* border: 1px solid #e0e0e0; */
+  border-collapse: collapse;
+}
+.table_contents .trcc .tdcc {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 12px;
+  border-collapse: collapse;
+  padding-left: 185px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.table_header .trcc .thcc {
+  padding-left: 185px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: solid;
+  padding-bottom: 4px;
+}
+.table_body {
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+/* h2 {
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 24px;
+} */

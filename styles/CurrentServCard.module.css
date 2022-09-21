@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@media screen and (max-width: 480px) {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .currentServCard {
+    display: block;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .cardImg {
+    width: 50px;
+    height: 50px;
+    margin-top: 26.5px;
+  }
+
+  .Service_Title {
+    text-align: center;
+    white-space: wrap;
+  }
+
+  .Current_Service_Container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.currentServCard {
+  display: block;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.cardImg {
+  width: 50px;
+  height: 50px;
+  margin-top: 26.5px;
+}
+
+.Service_Title {
+  text-align: center;
+  white-space: wrap;
+}
+
+.Current_Service_Container {
+  display: flex;
+  flex-wrap: wrap;
+}
